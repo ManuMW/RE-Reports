@@ -1,9 +1,8 @@
-# Inside a Supply Chain Attack: Technical Analysis of a Node.js InfoStealer
-
-* **Date:** July 4, 2026
-* **Category:** Malware Analysis, Threat Intelligence, Supply Chain Security
-* **Author:** Security Research Blog
-
+---
+layout: post
+title: "Inside a Supply Chain Attack: Technical Analysis of a Node.js InfoStealer"
+date: 2026-07-04 12:00:00 +0000
+categories: malware-analysis threat-intelligence supply-chain
 ---
 
 ## Executive Summary

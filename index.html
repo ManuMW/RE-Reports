@@ -1,5 +1,15 @@
-<!DOCTYPE html>
-<html>
-<head><title>RE Reports</title></head>
-<body><h1>Reverse Engineering Reports</h1></body>
-</html>
+---
+layout: default
+title: RE Reports
+---
+
+<h1>Reverse Engineering Reports</h1>
+
+<ul class="posts">
+  {% for post in site.posts %}
+    <li>
+      <span class="post-date">{{ post.date | date: "%b %d, %Y" }}</span> &raquo;
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
