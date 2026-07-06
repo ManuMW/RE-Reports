@@ -1,8 +1,5 @@
 ---
-layout: post
 title: "Inside a Supply Chain Attack: Technical Analysis of a Node.js InfoStealer"
-date: 2026-07-04 12:00:00 +0000
-categories: malware-analysis threat-intelligence supply-chain
 ---
 
 ## Executive Summary
@@ -148,3 +145,4 @@ To defend development environments against supply chain payloads like `malware.j
 3. **Restrict Hook Scripts**: Disable automatic lifecycle script execution during package installations:
    `npm config set ignore-scripts true`
 4. **Outbound Firewall Restrictions**: Block non-standard outbound connections from dev environments. Standard development nodes rarely need direct socket connections to external, raw IP addresses (e.g., `216.126.225.243`).
+

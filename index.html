@@ -6,10 +6,9 @@ title: RE Reports
 <h1>Reverse Engineering Reports</h1>
 
 <ul class="posts">
-  {% for post in site.posts %}
+  {% for report in site.reports %}
     <li>
-      <span class="post-date">{{ post.date | date: "%b %d, %Y" }}</span> &raquo;
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <a href="{{ report.url | relative_url }}">{{ report.title }}</a>
     </li>
   {% endfor %}
 </ul>

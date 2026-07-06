@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/assets/css/style.css?v=5ce0ed97b6b2f7680f70d54af5770f9e41870c5a">
+    <link rel="stylesheet" href="/assets/css/style.css?v=81443be6c4460c4c128121e5198c4839be1cadb7">
     <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
 
 <!-- Setup theme-color -->
@@ -32,15 +32,12 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Executive Summary" />
 <meta property="og:description" content="Executive Summary" />
-<link rel="canonical" href="http://localhost:4000/malware-analysis/threat-intelligence/supply-chain/2026/07/04/inside-a-supply-chain-attack.html" />
-<meta property="og:url" content="http://localhost:4000/malware-analysis/threat-intelligence/supply-chain/2026/07/04/inside-a-supply-chain-attack.html" />
 <meta property="og:site_name" content="RE Reports" />
-<meta property="og:type" content="article" />
-<meta property="article:published_time" content="2026-07-04T17:30:00+05:30" />
+<meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Inside a Supply Chain Attack: Technical Analysis of a Node.js InfoStealer" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-07-04T17:30:00+05:30","datePublished":"2026-07-04T17:30:00+05:30","description":"Executive Summary","headline":"Inside a Supply Chain Attack: Technical Analysis of a Node.js InfoStealer","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/malware-analysis/threat-intelligence/supply-chain/2026/07/04/inside-a-supply-chain-attack.html"},"url":"http://localhost:4000/malware-analysis/threat-intelligence/supply-chain/2026/07/04/inside-a-supply-chain-attack.html"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"Executive Summary","headline":"Inside a Supply Chain Attack: Technical Analysis of a Node.js InfoStealer","url":"/inside-a-supply-chain-attack/"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -63,12 +60,7 @@
 
     <div class="container">
       <section id="main_content">
-        <small>4 July 2026</small>
-<h1>Inside a Supply Chain Attack: Technical Analysis of a Node.js InfoStealer</h1>
-
-<p class="view">by </p>
-
-<h2 id="executive-summary">Executive Summary</h2>
+        <h2 id="executive-summary">Executive Summary</h2>
 
 <p>Supply chain attacks targeting package registries like <code class="language-plaintext highlighter-rouge">npm</code>, <code class="language-plaintext highlighter-rouge">PyPI</code>, and <code class="language-plaintext highlighter-rouge">crates.io</code> have become a standard delivery vector for modern threat actors. By leveraging typosquatting or dependency confusion, attackers trick developers or automated CI/CD systems into executing malicious code upon package installation.</p>
 
@@ -230,10 +222,6 @@ It then derives the cryptographic key using PBKDF2 with salt <code class="langua
 <code class="language-plaintext highlighter-rouge">npm config set ignore-scripts true</code></li>
   <li><strong>Outbound Firewall Restrictions</strong>: Block non-standard outbound connections from dev environments. Standard development nodes rarely need direct socket connections to external, raw IP addresses (e.g., <code class="language-plaintext highlighter-rouge">216.126.225.243</code>).</li>
 </ol>
-
-
-
-  <small>tags: <em></em></small>
 
 
       </section>
